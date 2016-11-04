@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="grid">
+    <div class="grid-item 1/1 logo">
+      <font class="logo-web">
+        Web
+      </font>
+
+      <font class="logo-office">
+        dean's office
+      </font>
+    </div>
+  </div>
+
+  <div class="grid grid-center">
+    <div class="grid-item login-form 2/5 medium-3/5 compact-1/1">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end -%>
+        
+        <div class="actions btn-login text-center">
+          <%= f.submit "Log in" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
