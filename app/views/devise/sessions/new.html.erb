@@ -1,19 +1,14 @@
-<div class="container">
-
-  <div class="grid">
-    <div class="grid-item 1/1 logo">
-      <font class="logo-web">
-        Web
-      </font>
-
-      <font class="logo-office">
-        dean's office
-      </font>
-    </div>
-  </div>
-
   <div class="grid grid-center">
     <div class="grid-item login-form 2/5 medium-3/5 compact-1/1">
+
+      <% if notice %>
+          <div class="text-center"><h4><%= notice %></h4></div>
+      <% end %>
+
+      <% if alert %>
+          <div class="text-center"><h4><%= alert %></h4></div>
+      <% end %>
+
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field">
           <%= f.label :email %>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webdziekanat</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <div class="container">
+
+    <div class="grid">
+      <div class="grid-item 1/1 logo">
+        <font class="logo-web">
+          Web
+        </font>
+
+        <font class="logo-office">
+          dean's office
+        </font>
+      </div>
+    </div>
+
+    <%= yield %>
+  </div>
+    
+    <%= render 'shared/footer' %>
+  </body>
+</html>
