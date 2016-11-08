@@ -1,15 +1,25 @@
 
-<div class="grid dashboard">
-	<div class="grid-item 1/3 dashoard-round-button dashboard-round-button-circle">
-		<a>contact dean</a>
+<div class="grid announcements">
+
+	<div class="grid-item 1/1 announcement">
+
+		<div class="grid-item 1/1 ann-title">
+			Workshop with PhD Makowski
+		</div>
+
+		<div class="grid-item 1/1 ann-content">
+			Dear students!
+			Next week, 14-18.11.2016 , during Embedded Systems Week, everyday at 8:15 in room M there are special classes with PhD Makowski during which every student will have chance to learn how to build blining LED! Classes will take approx 2 hours. Each participant will be awarded with special Makowski's T-Shirt with one of funny sayings like "-5%"!
+			In order to become participant, please visit IO!
+		</div>
+
+		<div class="grid-item 1/2 ann-author">
+			Laetitia Bongonga
+		</div>
+
+		<div class="grid-item 1/2 ann-date">
+			<%= DateTime.now %>
+		</div>
 	</div>
 
-	<div class="grid-item 1/3">
-		check grades
-	</div>
-
-	<div class="grid-item 1/3">
-		dean's announcements
-	</div>
-	<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 </div>

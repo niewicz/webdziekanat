@@ -1,0 +1,57 @@
+$color-navbar-link: #212121;
+$color-navbar-link-hover: #4caf50;
+
+.navbar {
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0px 2px 2px #aaa;
+  margin-bottom: 15px;
+  font-size: 30px;
+  vertical-align: middle;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: 5px;
+    color: $color-navbar-link;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $color-navbar-link-hover;
+  }
+}
+
+.navbar-left {
+  text-align: left;
+}
+
+.navbar-center {
+  text-align: center;
+  li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.navbar-right {
+  text-align: right;
+
+  .user-name {
+    font-size: 20px;
+  }
+}
+
+.dropdown-menu {
+  text-align: right;
+}

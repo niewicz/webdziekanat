@@ -12,7 +12,30 @@
 
   <div class="container">
 
-    <div class="grid">
+    <div class="grid hidden compact-visible logo-mobile">
+      <div class="grid-item 1/1 text-center logo-tul mobile">
+        Lodz University of Technology
+        <hr>
+      </div>
+      <div class="grid-item 1/1 logo">
+        <span class="logo-web">
+          Web
+        </span>
+
+        <span class="logo-office">
+          dean's office
+        </span>
+      </div>  
+    </div>
+
+    <div class="grid compact-hidden logo-regular">
+      <div class="grid-item 1/1 text-center logo-tul">
+        <%= image_tag("logo_PL.jpg", size: "50x78", alt: "") %> Lodz University of Technology
+        <hr>
+      </div>
+    </div>
+
+    <div class="grid compact-hidden logo-regular">
       <div class="grid-item 1/1 logo">
         <font class="logo-web">
           Web
@@ -25,8 +48,8 @@
     </div>
 
     <%= yield %>
+
   </div>
-    
-    <%= render 'shared/footer' %>
+  
   </body>
 </html>

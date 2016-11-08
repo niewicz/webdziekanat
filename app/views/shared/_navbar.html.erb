@@ -1,0 +1,73 @@
+<div class="navbar bigger">
+
+	<div class="grid">
+
+		<div class="grid-item 1/3 medium-4/5 compact-4/5 navbar-left">
+			<%= link_to root_path do %>  
+				<%= image_tag("logo_PL.jpg", size: "30x47", alt: "") %>
+        		<span class="logo-web">
+         			Web
+        		</span>
+
+       			<span class="logo-office">
+       				dean's office
+       			</span>
+			<% end %>
+		</div>
+
+		<div class="grid-item hidden medium-1/5 medium-visible compact-1/5 compact-visible dropdown-menu">
+			<ul>
+				<li>
+					<%= link_to root_path do %> 
+						<i class="fa fa-bars"></i>
+					<% end %>
+				</li>
+			</ul>
+		</div>
+
+		<div class="grid-item 1/3 medium-hidden compact-hidden navbar-center">
+			<ul>
+				<li>
+					<%= link_to root_path do %> 
+						<i class="fa fa-home"></i>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to root_path do %> 
+						<i class="fa fa-envelope"></i>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to root_path do %> 
+						<i class="fa fa-book"></i>
+					<% end %>
+				</li>
+								<li>
+					<%= link_to root_path do %> 
+						<i class="fa fa-calendar"></i>
+					<% end %>
+				</li>
+			</ul>
+		</div>
+
+		<div class="grid-item 1/3 medium-hidden compact-hidden navbar-right">
+			<ul>
+				<li class="user-name">
+					<%= current_user.first_name %> <%= current_user.last_name %>
+				</li>
+				<li>
+					<%= link_to edit_user_registration_path do %>
+						<i class="fa fa-cog"></i>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to destroy_user_session_path, method: :delete do %> 
+						<i class="fa fa-sign-out"></i>
+					<% end %>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</div>
