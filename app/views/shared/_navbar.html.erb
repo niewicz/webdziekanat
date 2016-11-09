@@ -1,18 +1,26 @@
-<div class="navbar bigger">
+<div class="navbar">
 
 	<div class="grid">
 
 		<div class="grid-item 1/3 medium-4/5 compact-4/5 navbar-left">
-			<%= link_to root_path do %>  
-				<%= image_tag("logo_PL.jpg", size: "30x47", alt: "") %>
-        		<span class="logo-web">
-         			Web
-        		</span>
+			<ul>
+				<li>
+					<%= link_to root_path do %> 
+						<%= image_tag("logo_PL.jpg", size: "30x47", alt: "") %>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to root_path do %>  
+        				<span class="logo-web">
+         					Web
+        				</span>
 
-       			<span class="logo-office">
-       				dean's office
-       			</span>
-			<% end %>
+       					<span class="logo-office">
+       						dean's office
+       					</span>
+					<% end %>
+				</li>
+			</ul>
 		</div>
 
 		<div class="grid-item hidden medium-1/5 medium-visible compact-1/5 compact-visible dropdown-menu">
