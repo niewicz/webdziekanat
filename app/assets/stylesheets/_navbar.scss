@@ -1,5 +1,5 @@
 $color-navbar-link: #212121;
-$color-navbar-link-hover: #4caf50;
+$color-navbar-link-hover: #607d8b;
 
 .navbar {
 	border-bottom: 1px solid #aaa;
@@ -27,7 +27,7 @@ $color-navbar-link-hover: #4caf50;
 
   a {
     display: block;
-    padding: 0 5px;
+    padding: 5px;
     color: $color-navbar-link;
     text-decoration: none;
   }
@@ -55,12 +55,44 @@ $color-navbar-link-hover: #4caf50;
   .user-name {
     font-size: 20px;
   }
+
+  .fa-bars {
+    padding-right: 10px;
+    cursor: pointer;
+  }
 }
 
-.dropdown-menu {
-  text-align: right;
+.mobile-menu {
+  display: none;
+  text-align: center;
+}
 
-  a {
-    padding-right: 10px;
+
+@include rwd("compact") {
+  #navbar-checkbox:not(checked) ~ .mobile-menu {
+    display: none;
+  }
+
+  #navbar-checkbox:checked ~ .mobile-menu {
+    display: block;
+  }
+
+  .navbar {
+    font-size: 25px;
+  }
+
+  .navbar-center li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@include rwd("medium") {
+  #navbar-checkbox:not(checked) ~ .mobile-menu {
+    display: none;
+  }
+
+  #navbar-checkbox:checked ~ .mobile-menu {
+    display: block;
   }
 }
