@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'useful_links/index'
+
   get 'home/index'
 
   root 'home#index'

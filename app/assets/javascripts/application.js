@@ -15,12 +15,16 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
     $("#navbar-checkbox").click(function(){
         $("#toggle-mobile-menu").toggle();
     });
 
     setTimeout(function() {
-    $('#message-holder').fadeOut('slow');
-}, 3000);
-});
+    $("#message-holder").fadeOut("slow");
+	}, 3000);
+
+    $("#use-ful-drop").click(function(){
+        $("#use-ful-links").slideToggle("fast");
+    });
+});	

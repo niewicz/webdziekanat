@@ -12,9 +12,15 @@
 
     <%= render 'shared/navbar' %>
 
-    <div class="below-navbar">
+    <div class="grid below-navbar">
 
-      <%= yield %>
+      <div class="grid-item 1/5 medium-hidden compact-hidden">
+        <%= render 'shared/useful_links' %>
+      </div>
+
+      <div class="grid-item 4/5 medium-1/1 compact-1/1">
+        <%= yield %>
+      </div>
 
     </div>
     
