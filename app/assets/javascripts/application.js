@@ -15,6 +15,12 @@
 //= require turbolinks
 //= require_tree .
 
-setTimeout(function() {
+$(document).ready(function(){
+    $("#navbar-checkbox").click(function(){
+        $("#toggle-mobile-menu").toggle();
+    });
+
+    setTimeout(function() {
     $('#message-holder').fadeOut('slow');
 }, 3000);
+});

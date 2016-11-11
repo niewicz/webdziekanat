@@ -1,13 +1,17 @@
+#message-holder {
+	margin-top: 65px;
+}
+
 .message-box {
-	box-shadow: 2px 2px 2px #aaa;
-	color: #333;
+	box-shadow: 2px 2px 2px $color-standard-shadow;
+	color: black;
 	text-align: center;
 }
 
 .message-normal {
-	background-color: #9ccc65;
+	background-color: $color-message-normal;
 }
 
 .message-critical {
-	background-color: #e53935;
+	background-color: $color-message-critical;
 }

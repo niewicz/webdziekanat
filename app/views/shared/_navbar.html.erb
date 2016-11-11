@@ -1,4 +1,4 @@
-<div class="navbar">
+<div class="navbar fixed-navbar">
 
 	<div class="grid">
 
@@ -22,42 +22,6 @@
           <i class="fa fa-bars"></i>
         </label>
       	<input type="checkbox" id="navbar-checkbox" class="hidden">
-
-		<div class="grid-item 1/1 mobile-menu navbar-center">
-			<ul>
-				<li>
-					<%= link_to root_path do %> 
-						<i class="fa fa-home"></i>
-					<% end %>
-				</li>
-				<li>
-					<%= link_to root_path do %> 
-						<i class="fa fa-envelope"></i>
-					<% end %>
-				</li>
-				<li>
-					<%= link_to root_path do %> 
-						<i class="fa fa-book"></i>
-					<% end %>
-				</li>
-								<li>
-					<%= link_to root_path do %> 
-						<i class="fa fa-calendar"></i>
-					<% end %>
-				</li>
-				<li>
-					<%= link_to edit_user_registration_path do %>
-						<i class="fa fa-cog"></i>
-					<% end %>
-				</li>
-				<li>
-					<%= link_to destroy_user_session_path, method: :delete do %> 
-						<i class="fa fa-sign-out"></i>
-					<% end %>
-				</li>
-			</ul>
-		</div>
-
 
 		<div class="grid-item 1/3 medium-hidden compact-hidden navbar-center">
 			<ul>
@@ -104,5 +68,40 @@
 
 	</div>
 
+</div>
+
+<div id="toggle-mobile-menu" class="navbar fixed-mobile-menu mobile-menu navbar-center">
+	<ul>
+		<li>
+			<%= link_to root_path do %> 
+				<i class="fa fa-home"></i>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to root_path do %> 
+				<i class="fa fa-envelope"></i>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to root_path do %> 
+				<i class="fa fa-book"></i>
+			<% end %>
+		</li>
+						<li>
+			<%= link_to root_path do %> 
+				<i class="fa fa-calendar"></i>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to edit_user_registration_path do %>
+				<i class="fa fa-cog"></i>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to destroy_user_session_path, method: :delete do %> 
+				<i class="fa fa-sign-out"></i>
+			<% end %>
+		</li>
+	</ul>
 </div>
 

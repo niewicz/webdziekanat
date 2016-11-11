@@ -1,12 +1,11 @@
-$color-navbar-link: #212121;
-$color-navbar-link-hover: #607d8b;
-
 .navbar {
-	border-bottom: 1px solid #aaa;
-	box-shadow: 0px 2px 2px #aaa;
+  position: relative;
+	
+	box-shadow: 0px 2px 2px $color-standard-shadow;
   margin-bottom: 15px;
   font-size: 30px;
   vertical-align: middle;
+  background: $color-navbar-background;
 
   ul {
     list-style-type: none;
@@ -37,6 +36,15 @@ $color-navbar-link-hover: #607d8b;
   }
 }
 
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 58px;
+}
+
 .navbar-left {
   text-align: left;
 }
@@ -65,18 +73,22 @@ $color-navbar-link-hover: #607d8b;
 .mobile-menu {
   display: none;
   text-align: center;
+  background: $color-mobile-menu;
+  border-top: 1px solid $color-standard-border;
+  box-shadow: 0px 2px 2px $color-standard-shadow;
+  color: #111;
 }
 
+.fixed-mobile-menu {
+  position: fixed;
+  top: 58px;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 58px;
+}
 
 @include rwd("compact") {
-  #navbar-checkbox:not(checked) ~ .mobile-menu {
-    display: none;
-  }
-
-  #navbar-checkbox:checked ~ .mobile-menu {
-    display: block;
-  }
-
   .navbar {
     font-size: 25px;
   }
@@ -87,12 +99,8 @@ $color-navbar-link-hover: #607d8b;
   }
 }
 
-@include rwd("medium") {
-  #navbar-checkbox:not(checked) ~ .mobile-menu {
-    display: none;
-  }
-
-  #navbar-checkbox:checked ~ .mobile-menu {
-    display: block;
+@media all and (min-width: 951px) {
+  .mobile-menu {
+    display: none !important;
   }
 }

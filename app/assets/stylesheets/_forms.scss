@@ -5,9 +5,9 @@ form {
 .login-form {
 	border-style: solid;
 	border-width: 1px;
-	border-color: #888;
+	border-color: $color-form-border;
 	border-radius: 5%;
-	box-shadow: 5px 5px 5px #888888;
+	box-shadow: 5px 5px 5px $color-form-shadow;
 	background: #f0f0f0;
 	padding: 20px;
 }
@@ -23,7 +23,7 @@ textarea {
 
 	&:focus {
     	outline: 0;
-		border: 1px solid #888;
+		border: 1px solid $color-form-border;
 	}
 }
 

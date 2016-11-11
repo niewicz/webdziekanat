@@ -1,19 +1,34 @@
 .announcements {
 	padding: 5px;
+	padding-top: 60px;
 	margin: 5px;
 }
 
 .announcement {
-	padding: 5px;
-	margin: 5px;
+	padding: 10px;
+	margin: 10px;
+}
 
-	background: #eee;
-	border: 1px solid #aaa;
-	box-shadow: 0px 2px 2px #aaa;
+.announcement:hover {
+
 }
 
 .ann-title {
 	font-size: 20px;
 	font-weight: 600;
-	padding: 10px;
+	padding: 2px;
+	border-bottom: 1px solid $color-standard-border;
+}
+
+.ann-content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ann-author {
+	float: left;
+}
+
+.ann-date {
+	float: left;
 }
