@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+setTimeout(function() {
+    $('#message-holder').fadeOut('slow');
+}, 3000);
