@@ -27,4 +27,8 @@ $(document).on('turbolinks:load', function(){
     $("#use-ful-drop").click(function(){
         $("#use-ful-links").slideToggle("fast");
     });
+
+    $("#time-tab-drop").click(function(){
+        $("#time-tab-list").slideToggle("fast");
+    });
 });	

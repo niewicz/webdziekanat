@@ -1,8 +1,8 @@
 .useful-links {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 0;
+	padding-right: 0;
 
 	.useful-links-dropdown {
 		margin: 10px;
@@ -45,7 +45,10 @@
 	.useful-links-links-visible {
 		display: block;
 		margin: 0;
-		padding: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		padding-right: 25px;
+		padding-left: 25px;
 
 		.useful-links-link {
 			margin: 5px;
