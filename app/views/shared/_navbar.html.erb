@@ -26,7 +26,7 @@
 		<div class="grid-item 1/3 medium-hidden compact-hidden navbar-center">
 			<ul>
 				<li>
-					<%= link_to root_path do %> 
+					<%= link_to root_path, title: "Home" do %> 
 						<i class="fa fa-home"></i>
 					<% end %>
 				</li>
@@ -36,12 +36,12 @@
 					</a>
 				</li>
 				<li>
-					<%= link_to root_path do %> 
+					<%= link_to grades_index_path, title: "Grades" do %> 
 						<i class="fa fa-book"></i>
 					<% end %>
 				</li>
 				<li>
-					<%= link_to asset_path("5CS1.pdf") do %> 
+					<%= link_to asset_path("5CS1.pdf"), title: "Your timetable" do %> 
 						<i class="fa fa-calendar"></i>
 					<% end %>
 				</li>
@@ -54,12 +54,12 @@
 					<%= current_user.first_name %> <%= current_user.last_name %>
 				</li>
 				<li>
-					<%= link_to edit_user_registration_path do %>
+					<%= link_to edit_user_registration_path, title: "Edit profile" do %>
 						<i class="fa fa-cog"></i>
 					<% end %>
 				</li>
 				<li>
-					<%= link_to destroy_user_session_path, method: :delete do %> 
+					<%= link_to destroy_user_session_path, title: "Sign out", method: :delete do %> 
 						<i class="fa fa-sign-out"></i>
 					<% end %>
 				</li>
@@ -83,7 +83,7 @@
 			</a>
 		</li>
 		<li>
-			<%= link_to root_path, title: "Grades" do %> 
+			<%= link_to grades_index_path, title: "Grades" do %> 
 				<i class="fa fa-book"></i>
 			<% end %>
 		</li>

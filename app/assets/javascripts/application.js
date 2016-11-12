@@ -31,4 +31,33 @@ $(document).on('turbolinks:load', function(){
     $("#time-tab-drop").click(function(){
         $("#time-tab-list").slideToggle("fast");
     });
+
+    $("#sem-dropdown").click(function(){
+        $("#sem-list").slideToggle("fast");
+    });
+
+    $('#sem1').click(function(){
+        $('#sem-selected').html("Semester 1 - Winter 2014");
+        $("#sem-list").slideToggle("fast");
+    });
+
+    $('#sem2').click(function(){
+        $('#sem-selected').html("Semester 2 - Spring 2015");
+        $("#sem-list").slideToggle("fast");
+    });
+
+    $('#sem3').click(function(){
+        $('#sem-selected').html("Semester 3 - Winter 2015");
+        $("#sem-list").slideToggle("fast");
+    });
+
+    $('#sem4').click(function(){
+        $('#sem-selected').html("Semester 4 - Spring 2016");
+        $("#sem-list").slideToggle("fast");
+    });
+
+    $('#sem5').click(function(){
+        $('#sem-selected').html("Semester 5 - Winter 2016");
+        $("#sem-list").slideToggle("fast");
+    });
 });	

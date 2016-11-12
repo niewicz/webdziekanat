@@ -1,0 +1,74 @@
+.grades {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	.select-sem {
+			padding-top: 15px;
+			padding-bottom: 5px;
+			padding-left: 0px;
+			padding-right: 0px;
+			border-bottom: 1px solid $color-standard-border;
+			font-size: 20px;
+
+		.select-sem-dropdown {
+			cursor: pointer;
+			float:left;
+		}
+
+		.select-sem-selected {
+			float: left;
+			font-weight: 600;
+		}
+
+		.select-sem-dropdown:hover {
+			font-weight: 600;
+		}
+	}
+
+	.select-sem-list {
+		display: none;
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		.select-sem-list-item {
+			margin: 5px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 20px;
+			padding-right: 30px;
+		}
+
+		.select-sem-list-item:hover {
+			font-weight: 600;
+		}
+	}
+
+	.grades-table {
+
+	}
+}
+
+@include rwd("compact") {
+	.grades {
+		.grid-item {
+			margin: 0;
+			padding: 0;
+		}
+
+		.select-sem {
+			font-size: 15px;
+		}
+
+		.select-sem-list {
+			.select-sem-list-item {
+				padding-left: 10px;
+				padding-right: 20px;
+			}
+		}
+	}
+}

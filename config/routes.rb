@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'grades/index'
+
   get 'timetable_changes/index'
 
   get 'useful_links/index'
