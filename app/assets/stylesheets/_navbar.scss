@@ -6,6 +6,7 @@
   font-size: 30px;
   vertical-align: middle;
   background: $color-navbar-background;
+  color: $color-text-white;
 
   ul {
     list-style-type: none;
@@ -29,6 +30,7 @@
     padding: 5px;
     color: $color-navbar-link;
     text-decoration: none;
+    vertical-align: middle;
   }
 
   a:hover {
@@ -77,6 +79,13 @@
   border-top: 1px solid $color-standard-border;
   box-shadow: 0px 2px 2px $color-standard-shadow;
   color: #111;
+  a {
+    color: $color-mobile-menu-link;
+  }
+
+  a:hover {
+    color: $color-mobile-menu-link-hover;
+  }
 }
 
 .fixed-mobile-menu {
@@ -94,8 +103,8 @@
   }
 
   .navbar-center li {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .logo-web {
@@ -111,10 +120,26 @@
   }
 }
 
-@media all and (min-width: 951px) {
+@media all and (min-width: 1024px) {
   .mobile-menu {
     display: none !important;
   }
+}
+
+@media all and (max-width: 536px) {
+  .navbar-center li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+@media all and (max-width: 349px) {
+  .navbar-center li {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
 }
 
 .below-navbar {

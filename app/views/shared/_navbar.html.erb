@@ -73,32 +73,42 @@
 <div id="toggle-mobile-menu" class="navbar fixed-mobile-menu mobile-menu navbar-center">
 	<ul>
 		<li>
-			<%= link_to root_path do %> 
+			<%= link_to root_path, title: "Home" do %> 
 				<i class="fa fa-home"></i>
 			<% end %>
 		</li>
 		<li>
-			<a href="https://cas.p.lodz.pl/cas/login?service=https://virtul.p.lodz.pl/spe">
+			<a href="https://cas.p.lodz.pl/cas/login?service=https://virtul.p.lodz.pl/spe" title="E-Mail client">
 				<i class="fa fa-envelope"></i>
 			</a>
 		</li>
 		<li>
-			<%= link_to root_path do %> 
+			<%= link_to root_path, title: "Grades" do %> 
 				<i class="fa fa-book"></i>
 			<% end %>
 		</li>
 		<li>
-			<%= link_to asset_path("5CS1.pdf") do %> 
+			<%= link_to asset_path("5CS1.pdf"), title: "Your timetable" do %> 
 				<i class="fa fa-calendar"></i>
 			<% end %>
 		</li>
 		<li>
-			<%= link_to edit_user_registration_path do %>
+			<%= link_to timetable_changes_index_path, title: "Timetable changes" do %> 
+				<i class="fa fa-calendar-times-o"></i>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to useful_links_index_path, title: "Useful links" do %> 
+				<i class="fa fa-external-link"></i>
+			<% end %>
+		</li>
+		<li class="compact-hidden">
+			<%= link_to edit_user_registration_path, title: "Edit profile" do %>
 				<i class="fa fa-cog"></i>
 			<% end %>
 		</li>
 		<li>
-			<%= link_to destroy_user_session_path, method: :delete do %> 
+			<%= link_to destroy_user_session_path, title: "Sign out", method: :delete do %> 
 				<i class="fa fa-sign-out"></i>
 			<% end %>
 		</li>
