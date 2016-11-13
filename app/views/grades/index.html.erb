@@ -1,33 +1,48 @@
 <div class="grid grades">
 	<div class="grid-item 1/1 select-sem">
-		<div id="sem-dropdown" class="grid-item 2/5 select-sem-dropdown">
+		<div id="sem-dropdown" class="grid-item 1/1 select-sem-dropdown">
 			Select semester <i class="fa fa-angle-down"></i>
 		</div>
 
-		<div id="sem-selected" class="grid-item 3/5 select-sem-selected">
-			Semester 1 - Winter 2014
+		<div id="sem-list" class="grid-item 1/1 select-sem-list">
+			<div id="sem1" class="grid-item 1/1 select-sem-list-item">
+				<i class="fa fa-angle-right"></i> Semester 1 - Winter 2014
+			</div>
+			<div id="sem2" class="grid-item 1/1 select-sem-list-item">
+				<i class="fa fa-angle-right"></i> Semester 2 - Spring 2015
+			</div>
+			<div id="sem3" class="grid-item 1/1 select-sem-list-item">
+				<i class="fa fa-angle-right"></i> Semester 3 - Winter 2015
+			</div>
+			<div id="sem4" class="grid-item 1/1 select-sem-list-item">
+				<i class="fa fa-angle-right"></i> Semester 4 - Spring 2016
+			</div>
+			<div id="sem5" class="grid-item 1/1 select-sem-list-item">
+				<i class="fa fa-angle-right"></i> Semester 5 - Winter 2016
+			</div>
 		</div>
 	</div>
 
-	<div id="sem-list" class="grid-item 1/1 select-sem-list">
-		<div id="sem1" class="grid-item 1/1 select-sem-list-item">
-			<i class="fa fa-angle-right"></i> Semester 1 - Winter 2014
-		</div>
-		<div id="sem2" class="grid-item 1/1 select-sem-list-item">
-			<i class="fa fa-angle-right"></i> Semester 2 - Spring 2015
-		</div>
-		<div id="sem3" class="grid-item 1/1 select-sem-list-item">
-			<i class="fa fa-angle-right"></i> Semester 3 - Winter 2015
-		</div>
-		<div id="sem4" class="grid-item 1/1 select-sem-list-item">
-			<i class="fa fa-angle-right"></i> Semester 4 - Spring 2016
-		</div>
-		<div id="sem5" class="grid-item 1/1 select-sem-list-item">
-			<i class="fa fa-angle-right"></i> Semester 5 - Winter 2016
+	<div id="sem-selected-container" class="grid-item 1/1 select-sem hidden">
+		<div id="sem-selected" class="grid-item 1/1 select-sem-selected">
 		</div>
 	</div>
 
-	<div class="grid-item 1/1 compact-1/1 grades-table">
-		Notes here
+	<div id="grades-here" class="grid-item 1/1 compact-1/1 grades-table">
+		<div id="id-sem1" class="sem-hidden">
+			<%= render 'shared/grades/grades_sem1' %>
+		</div>
+		<div id="id-sem2" class="sem-hidden">
+			<%= render 'shared/grades/grades_sem2' %>
+		</div>
+		<div id="id-sem3" class="sem-hidden">
+			<%= render 'shared/grades/grades_sem3' %>
+		</div>
+		<div id="id-sem4" class="sem-hidden">
+			<%= render 'shared/grades/grades_sem4' %>
+		</div>
+		<div id="id-sem5" class="sem-hidden">
+			<%= render 'shared/grades/grades_sem5' %>
+		</div>
 	</div>
 </div>

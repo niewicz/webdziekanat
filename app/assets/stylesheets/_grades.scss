@@ -5,70 +5,94 @@
 	padding-right: 30px;
 
 	.select-sem {
-			padding-top: 15px;
-			padding-bottom: 5px;
-			padding-left: 0px;
-			padding-right: 0px;
-			border-bottom: 1px solid $color-standard-border;
-			font-size: 20px;
+		padding-top: 15px;
+		padding-bottom: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-bottom: 1px solid $color-standard-border;
+		font-size: 20px;
 
 		.select-sem-dropdown {
 			cursor: pointer;
-			float:left;
 		}
 
 		.select-sem-selected {
-			float: left;
+			padding-top: 20px;
 			font-weight: 600;
 		}
 
 		.select-sem-dropdown:hover {
 			font-weight: 600;
 		}
+
+		.select-sem-list {
+			display: none;
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 16px;
+
+			.select-sem-list-item {
+				margin: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 20px;
+				padding-right: 30px;
+			}
+
+			.select-sem-list-item:hover {
+				font-weight: 600;
+			}
+		}
+
 	}
 
-	.select-sem-list {
+	#sem-selected-container {
 		display: none;
-		margin: 0;
-		padding-top: 0;
-		padding-bottom: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-
-		.select-sem-list-item {
-			margin: 5px;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			padding-left: 20px;
-			padding-right: 30px;
-		}
-
-		.select-sem-list-item:hover {
-			font-weight: 600;
-		}
 	}
 
 	.grades-table {
+		padding-top: 25px;
+		padding-bottom: 20px;
 
+		.sem-hidden {
+			display: none;
+		}
+
+		table {
+			thead {
+				tr {
+					border-bottom: 1px solid #ccc;
+				}
+			}
+			tbody {
+				tr:hover {
+					border-radius: 5px;
+					background: #eee;
+				}
+			}
+		}
 	}
 }
 
 @include rwd("compact") {
 	.grades {
-		.grid-item {
-			margin: 0;
-			padding: 0;
-		}
-
 		.select-sem {
-			font-size: 15px;
+			font-size: 16px;
+
+			.select-sem-list {
+				font-size: 15px;
+
+				.select-sem-list-item {
+					padding-left: 0px;
+					padding-right: 20px;
+				}
+			}
 		}
 
-		.select-sem-list {
-			.select-sem-list-item {
-				padding-left: 10px;
-				padding-right: 20px;
-			}
+		table {
+			font-size: 15px;
 		}
 	}
 }
