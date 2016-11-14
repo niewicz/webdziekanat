@@ -47,6 +47,15 @@
 			padding: 10px;
 			padding-bottom: 5px;
 			padding-top: 5px;
+
+			.mail {
+				text-decoration: none;
+				color: #42a5f5;
+			}
+
+			.mail:hover {
+				color: #1e88e5;
+			}
 		}
 
 		.contact-webpage {

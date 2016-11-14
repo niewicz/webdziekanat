@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'application_forms/index'
+
+  get 'academic_year/index'
+
+  get 'visiting_hours/index'
+
   get 'contact/index'
 
   get 'grades/index'

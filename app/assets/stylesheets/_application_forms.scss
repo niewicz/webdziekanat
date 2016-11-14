@@ -1,0 +1,50 @@
+.application-forms {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	.application-forms-title {
+		padding-top: 16px;
+		padding-bottom: 0;
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 25px;
+		border-bottom: 1px solid $color-standard-border;
+	}
+
+	.application-forms-list {
+		.application-forms-item {
+			padding-top: 15px;
+			padding-bottom: 0;
+			padding-right: 10px;
+			padding-left: 10px;
+
+			.application-forms-item-title {
+				font-size: 18px;
+				padding: 0;
+				padding-bottom: 5px;
+				padding-top: 5px;
+				cursor: pointer;
+
+				a {
+					text-decoration: none;
+					color: $color-text-black;
+				}
+			}
+
+			.application-forms-item-title:hover {
+				font-weight: 600;
+			}
+
+			.application-forms-item-description {
+				padding: 10px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+				font-size: 15px;
+				color: #aaa;
+			}
+		}
+	}
+}
