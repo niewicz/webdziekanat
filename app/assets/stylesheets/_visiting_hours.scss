@@ -1,4 +1,4 @@
-.academic-year {
+.visiting-hours {
 	margin: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -9,7 +9,7 @@
 		text-align: center;
 	}
 
-	.academic-year-title {
+	.visiting-hours-title {
 		padding-top: 16px;
 		padding-bottom: 0;
 		padding-right: 0;
@@ -18,14 +18,14 @@
 		border-bottom: 1px solid $color-standard-border;
 	}
 
-	.academic-year-list {
-		.academic-year-semester {
+	.visiting-hours-list {
+		.visiting-hours-item {
 			padding-top: 15px;
 			padding-bottom: 0;
 			padding-right: 10px;
 			padding-left: 10px;
 
-			.academic-year-semester-title {
+			.visiting-hours-item-title {
 				font-size: 18px;
 				padding: 0;
 				padding-bottom: 5px;
@@ -33,11 +33,11 @@
 				cursor: pointer;
 			}
 
-			.academic-year-semester-title:hover {
+			.visiting-hours-item-title:hover {
 				font-weight: 600;
 			}
 
-			.academic-year-semester-content {
+			.visiting-hours-item-schedule {
 				display: none;
 				padding: 10px;
 				padding-bottom: 5px;
@@ -47,25 +47,9 @@
 				table {
 					color: #666;
 
-					thead {
-						border-bottom: 1px solid $color-standard-border;
-						color: $color-text-black;
-					}
-
 					tr:hover {
 						color: #000;
 						background: #eee;
-					}
-				}
-
-				ul {
-					list-style: none;
-					margin-left: 0;
-					padding-left: 0;
-
-					li {
-						padding-left: 1em;
-						text-indent: -1em;
 					}
 				}
 			}
@@ -74,28 +58,27 @@
 }
 
 @include rwd('compact') {
-	.academic-year {
+	.visiting-hours {
 		margin: 0;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-right: 10px;
 		padding-left: 10px;
 
-		.academic-year-title {
+		.visiting-hours-title {
 			padding-top: 16px;
 			padding-bottom: 0;
 			padding-right: 0;
 			padding-left: 0;
 			font-size: 25px;
-			border-bottom: 1px solid $color-standard-border;
 		}
 
-		.academic-year-list {
-			.academic-year-semester {
+		.visiting-hours-list {
+			.visiting-hours-item {
 				padding: 0;
 				padding-top: 15px;
 
-				.academic-year-semester-content {
+				.visiting-hours-item-schedule {
 					padding: 0;
 					padding-bottom: 5px;
 					padding-top: 5px;

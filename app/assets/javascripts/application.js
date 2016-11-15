@@ -90,4 +90,24 @@ $(document).on('turbolinks:load', function(){
         $('#id-sem4').hide();
         $('#id-sem5').show();
     });
+
+    $('#winter-title').click(function(){
+        $('#winter-content').slideToggle('fast');
+    });
+
+    $('#spring-title').click(function(){
+        $('#spring-content').slideToggle('fast');
+    });
+
+    $('#soio-title').click(function(){
+        $('#soio-content').slideToggle('fast');
+    });
+
+    $('#management-title').click(function(){
+        $('#management-content').slideToggle('fast');
+    });
+
+    $('#dean-title').click(function(){
+        $('#dean-content').slideToggle('fast');
+    });
 });	
