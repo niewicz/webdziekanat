@@ -110,4 +110,28 @@ $(document).on('turbolinks:load', function(){
     $('#dean-title').click(function(){
         $('#dean-content').slideToggle('fast');
     });
+
+    $('#art-tit-1').click(function(){
+        $('#art-con-1').slideToggle('fast');
+    });
+
+    $('#art-tit-2').click(function(){
+        $('#art-con-2').slideToggle('fast');
+    });
+
+    $('#art-tit-3').click(function(){
+        $('#art-con-3').slideToggle('fast');
+    });
+
+    $('#art-tit-4').click(function(){
+        $('#art-con-4').slideToggle('fast');
+    });
+
+    $('#art-tit-5').click(function(){
+        $('#art-con-5').slideToggle('fast');
+    });
+
+    $('#art-tit-6').click(function(){
+        $('#art-con-6').slideToggle('fast');
+    });
 });	

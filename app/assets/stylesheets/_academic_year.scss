@@ -52,9 +52,11 @@
 						color: $color-text-black;
 					}
 
-					tr:hover {
-						color: #000;
-						background: #eee;
+					tbody {
+						tr:hover {
+							color: #000;
+							background: #eee;
+						}
 					}
 				}
 
