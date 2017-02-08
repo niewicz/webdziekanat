@@ -4,25 +4,28 @@
 
 ## Getting started
 
-0. Install rails (if you don't have it)
+Install rails (if you don't have it):
 ```
 $ gem install rails
 ```
-1. Install dependencies:
+Install dependencies:
 ```
 $ bundle install
 ```
-2. Create user
+Create user (in rails console):
 ```
 $ rails c
-$ User.create(email: "example@mail.com", password: "password", st_index: "000000", first_name: "Jan", last_name: "Kowalski")
+  User.create(email: "example@mail.com", password: "password", st_index: "000000", first_name: "Jan", last_name: "Kowalski")
+  exit
 ```
-3. Run app:
+Run app:
 ```
 $ rails s
 ```
 
+Now, you can log in!
+
 ## Author
 
-Tomasz Prochniewciz
+Tomasz Prochniewicz
 
