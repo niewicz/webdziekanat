@@ -15,7 +15,6 @@ $ bundle install
 2. Create user
 ```
 $ rails c
-```
 $ User.create(email: "example@mail.com", password: "password", st_index: "000000", first_name: "Jan", last_name: "Kowalski")
 ```
 3. Run app:
