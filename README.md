@@ -12,6 +12,10 @@ Install dependencies:
 ```
 $ bundle install
 ```
+Run migartions:
+```
+$ rails db:migrate
+```
 Create user (in rails console):
 ```
 $ rails c
